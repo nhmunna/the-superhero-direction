@@ -1,0 +1,21 @@
+.user{
+    background-color: rgba(240, 255, 255, 0.493);
+    border:1px solid blueviolet;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+.user img{
+    width: 40%;
+    margin: 5px;
+    border-radius: 50px;
+}
+.btn{
+    width: 25%;
+    margin: 10px;
+    background-color: rgba(218, 165, 32, 0.904);
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px;
+}
