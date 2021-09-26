@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Info from '../Info/Info';
 import User from '../User/User';
-import './Users.css'
+import './Users.css';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
