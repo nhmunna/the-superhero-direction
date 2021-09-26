@@ -8,12 +8,14 @@ const Users = () => {
 
     const [info, setInfo] = useState([]);
 
+    // load user data
     useEffect(() => {
         fetch('./users.JSON')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, []);
 
+    // event handler for add
     const handleAddToInfo = (user) => {
         const newInfo = [...info, user];
         setInfo(newInfo);
@@ -33,7 +35,10 @@ const Users = () => {
                     }
                 </div>
                 <div className="user-info">
-                    <Info info={info}></Info>
+                    <Info
+                        users={users}
+                        info={info}>
+                    </Info>
                 </div>
             </div>
         </div>
